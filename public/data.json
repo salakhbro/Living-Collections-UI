@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Scandi Ceramic Vessel",
+        "price": 120,
+        "image": "/img/product1.png",
+        "category": "NEW"
+    },
+    {
+        "id": 2,
+        "title": "Raw Linen Throw",
+        "price": 85,
+        "image": "/img/product2.png"
+    },
+    {
+        "id": 3,
+        "title": "Architectural Pendant",
+        "price": 340,
+        "image": "/img/product3.png"
+    },
+    {
+        "id": 4,
+        "title": "Amber Apothecary Set",
+        "price": 55,
+        "image": "/img/product4.png"
+    }
+]

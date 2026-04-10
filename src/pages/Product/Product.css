@@ -1,0 +1,401 @@
+.header {
+    width: 1520px;
+    height: 84px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.logo {
+    padding: 22px 50px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.header-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+    position: relative;
+    padding: 8px 0;
+    text-transform: uppercase;
+}
+
+.header-ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: currentColor;
+    transition: width 0.7s ease;
+}
+
+.header-ul li a:hover::after {
+    width: 100%;
+}
+
+.icons {
+    position: relative;
+    margin-top: -30px;
+    left: -30px;
+}
+
+.cart {
+    font-size: 30px;
+    color: #064E3B;
+}
+
+.user {
+    font-size: 25px;
+    color: #064E3B;
+}
+
+.back {
+    padding: 60px 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.devor {
+    position: relative;
+    left: -160px;
+    top: 50px;
+}
+
+.product-hero {
+    display: flex;
+}
+
+.ceramics {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.lunars {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.number {
+    display: flex;
+    gap: 10px;
+    color: #446657;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.number>h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: line-through;
+    color: #5B6061;
+    margin-top: 7px;
+}
+
+.hr {
+    width: 456px;
+    height: 1px;
+    background: #AFB3B3;
+    margin-top: 35px;
+}
+
+.hero-p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #5B6061;
+    margin-top: 40px;
+}
+
+.material-text {
+    display: flex;
+    gap: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #5B6061;
+    margin-top: 45px;
+}
+
+.material-text>h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2F3334;
+}
+
+.material-texts {
+    display: flex;
+    gap: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #5B6061;
+    margin-top: 20px;
+}
+
+.material-texts>h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2F3334;
+}
+
+.add-btn {
+    width: 450.7299499511719px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    background: #446657;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+    margin-top: 40px;
+}
+
+.icon-bag {
+    position: relative;
+    font-size: 25px;
+    top: 5px;
+    left: -10px;
+}
+
+.carbon-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5B6061;
+    margin-top: 32px;
+}
+
+.intention-hero {
+    width: 1520px;
+    height: 652px;
+    background: #F2F4F4;
+    margin-top: 150px;
+}
+
+.the-story {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    top: 30px;
+}
+
+.curated-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.curated-hero {
+    padding: 40px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.intention-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+}
+
+.ul>li>a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #446657;
+    list-style: none;
+}
+
+.ul {
+    list-style: none;
+}
+
+.complements-text {
+    padding: 100px 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #5B6061;
+}
+
+.complements-text>h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #2F3334;
+}
+
+.view-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-top: -105px;
+    left: -30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #446657;
+}
+
+.card-product {
+    width: 373.3333435058594px;
+    height: 444.3299865722656px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transition: 0.7s ease;
+}
+
+.card-product:hover {
+    transform: translateY(-10px);
+}
+
+.product-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.krushka {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 15px;
+    top: 15px;
+}
+
+.kitchen {
+    padding: 45px 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.kitchen>h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.narx {
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-weight: 500;
+    font-size: 16px;
+    color: #446657;
+    left: 320px;
+    top: -55px;
+}
+
+.footer {
+    width: 1520px;
+    height: 189px;
+    border-top: 1px solid #E2E8F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+    margin-top: 100px;
+}
+
+.market-header {
+    padding: 70px 40px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ethereal {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.intention {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.footer-nav {
+    margin-top: 70px;
+}
+
+.items {
+    position: relative;
+    display: flex;
+    width: 338px;
+    height: 48px;
+    background: #FFFFFFB2;
+    box-shadow: 0px 12px 32px 0px #9595951a;
+    border-radius: 12px;
+    left: 501px;
+    top: -90px;
+}
+
+.handle {
+    font-size: 30px;
+    color: #446657;
+}
+
+.footers {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    gap: 6px;
+}
+
