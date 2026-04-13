@@ -35,6 +35,17 @@ function Categories() {
         </div>
       </header>
 
+      <div className="mobile-header">
+        <h2>CURATION 04</h2>
+        <h1>Earthen Vessels</h1>
+
+        <div className="mobile-buttons">
+          <button className="active">All Objects</button>
+          <button>Vases</button>
+          <button>Bowls</button>
+        </div>
+      </div>
+
       <section className='bigs-header'>
         <section className='sidebar'>
           <div className='curators-head'>
@@ -108,7 +119,7 @@ function Categories() {
               </div>
             </div>
           </section>
-          
+
           <section className='card-two'>
             <div className='curateds'>
               <div className="card-container">
@@ -166,6 +177,28 @@ function Categories() {
           </nav>
         </div>
       </footer>
+
+      <div className="mobile-bottom-nav">
+        <div className="active">
+          <RxDashboard />
+          <span>Curated</span>
+        </div>
+
+        <div>
+          <PiSliders />
+          <span>Search</span>
+        </div>
+
+        <div>
+          <IoMdCart />
+          <span>Bag</span>
+        </div>
+
+        <div>
+          <FaRegUser />
+          <span>Profile</span>
+        </div>
+      </div>
     </div>
   )
 }

@@ -568,4 +568,357 @@
     gap: 5px;
 }
 
-@media (max-width: 300px) {}
+.nav-item {
+    display: none;
+}
+
+.media-living {
+    display: none;
+}
+
+.featured-mobile,
+.logo-media {
+    display: none;
+}
+
+.menu-m, .media-menu {
+    display: none;
+}
+
+@media (max-width: 390px) {
+    .header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    .header-nav,
+    .header-ul>li>a {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+        font-size: 10px;
+        padding: 0;
+        margin-left: -40px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .searchs {
+        display: none;
+    }
+
+    .card-container {
+        display: none;
+    }
+
+    .ethereal,
+    .intention,
+    .footer {
+        display: none;
+    }
+
+    .media-living {
+        position: relative;
+        display: block;
+        width: 342px;
+        height: 311px;
+        background: #C5EBD7;
+        border-radius: 32px;
+        top: -130px;
+    }
+
+    .jurnal {
+        padding: 30px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #37584A;
+    }
+
+    .media-living>h2 {
+        padding: 0px 25px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: #37584A;
+    }
+
+    .media-living>p {
+        padding: 15px 25px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #37584ACC;
+    }
+
+    .read-btn {
+        width: 155px;
+        height: 48px;
+        background: #446657;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 700;
+        margin-left: 20px;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+
+    .featured-mobile {
+        display: block;
+        padding: 15px;
+        margin-top: -80px;
+    }
+
+    .featured-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .featured-header h3 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .featured-header span {
+        font-size: 12px;
+        color: #777;
+    }
+
+    .featured-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .featured-card img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .featured-card p {
+        font-size: 13px;
+        margin-top: 6px;
+    }
+
+    .featured-card span {
+        font-size: 12px;
+        color: #777;
+    }
+
+    .choice {
+        display: none;
+    }
+
+    .logo-media {
+        display: block;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 45px;
+        position: fixed;
+    }
+
+    .menu-m {
+        display: block;
+        position: fixed;
+        top: 25px;
+    }
+
+    .media-menu {
+        font-size: 30px;
+        color: black;
+        display: block;
+    }
+
+    .media-search {
+        position: relative;
+        font-size: 30px;
+        left: 280px;
+        top: -25px;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+    .hero {
+        margin: 20px;
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .volume {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .modern {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .explore,
+    .story {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .Container-img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 390px) {
+
+    .home-card,
+    .home-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .koza {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .product-title {
+        font-size: 14px;
+    }
+
+    .product-desc {
+        display: none;
+        /* mobileda yashiramiz */
+    }
+
+    .product-price {
+        position: static;
+        font-size: 13px;
+    }
+}
+
+
+
+@media (max-width: 390px) {
+    .editor-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+        gap: 5px;
+    }
+
+    .new-text {
+        font-size: 22px;
+    }
+
+    .showing-text {
+        display: none;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .join-header {
+        width: 100%;
+        height: auto;
+        padding: 30px 15px;
+        border-radius: 20px;
+    }
+
+    .newsletter-title {
+        font-size: 24px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-input,
+    .newsletter-btn {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .footer {
+        display: none;
+    }
+
+    .items {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 390px) {
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid #eee;
+        z-index: 1000;
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        color: #999;
+    }
+
+    .nav-item svg {
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+
+    .nav-item.active {
+        color: #446657;
+        /* figmadagi yashil */
+    }
+}

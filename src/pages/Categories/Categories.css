@@ -53,6 +53,7 @@
 
 .nav-link {
     margin-left: -200px;
+    margin-top: -43px;
 }
 
 .icon-category {
@@ -324,4 +325,127 @@
     align-items: center;
     margin-left: 30px;
     gap: 6px;
+}
+
+.mobile-bottom-nav,
+.mobile-header {
+    display: none;
+}
+
+
+
+@media (max-width: 390px) {
+
+    .header-category,
+    .sidebar,
+    .footer {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+        padding: 20px;
+    }
+
+    .mobile-header h2 {
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: #777;
+    }
+
+    .mobile-header h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .mobile-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .mobile-buttons button {
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: none;
+        background: #eee;
+    }
+
+    .mobile-buttons .active {
+        background: #446657;
+        color: #fff;
+    }
+
+    .bigs-header {
+        display: block;
+    }
+
+    .header-cardss {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .cards,
+    .card-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .curateds {
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-container {
+        width: 100%;
+        margin-top: 0;
+        border-radius: 16px;
+    }
+
+    .koza {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .content-box {
+        padding: 10px;
+    }
+
+    .product-title {
+        font-size: 14px;
+    }
+
+    .product-desc {
+        font-size: 12px;
+    }
+
+    .product-price {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .mobile-bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #fff;
+        justify-content: space-around;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+
+    .mobile-bottom-nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .mobile-bottom-nav .active {
+        color: #446657;
+    }
 }

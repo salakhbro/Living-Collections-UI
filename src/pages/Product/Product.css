@@ -76,6 +76,11 @@
     text-transform: uppercase;
 }
 
+.link-back {
+    text-decoration: none;
+    color: #5B6061;
+}
+
 .devor {
     position: relative;
     left: -160px;

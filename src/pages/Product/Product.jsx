@@ -8,6 +8,7 @@ import Kulol from '../../assets/img/kulol.png'
 import Krushka from '../../assets/img/krushka.png'
 import Spoon from '../../assets/img/spoon.png'
 import Tables from '../../assets/img/tables.png'
+import { Link } from "react-router-dom";
 import './Product.css'
 
 function Product() {
@@ -31,7 +32,9 @@ function Product() {
         </div>
       </header>
 
-      <h2 className='back'>← Back to All Products</h2>
+      <Link to="/categories" className='link-back'>
+        <h2 className="back">← Back to All Products</h2>
+      </Link>
       <section className='product-hero'>
         <div className='hero-image'>
           <img src={Flower} alt="this is a picture" />
