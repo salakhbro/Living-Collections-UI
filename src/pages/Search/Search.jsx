@@ -123,7 +123,6 @@ function Search() {
         </section>
       </main>
 
-      {/* FOOTER */}
       <footer className='footer'>
         <div className='market-header'>
           <h3 className='ethereal'>The Ethereal Marketplace</h3>
