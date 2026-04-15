@@ -21,6 +21,8 @@ import Soch from '../../assets/img/soch.png'
 import { CiSearch } from "react-icons/ci";
 import Koza3 from '../../assets/img/koza(3).png'
 import Tapichka from '../../assets/img/tapichka.png'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import './Home.css'
 
 function Home() {
@@ -31,7 +33,7 @@ function Home() {
         <h1 className='logo-media'>The Curator</h1>
         <div className="menu-m">
           <CiMenuBurger className="media-menu" />
-          <CiSearch className='media-search'/>
+          <CiSearch className='media-search' />
         </div>
         <h1 className='logo'>The Ethereal Marketplace</h1>
         <nav className="header-nav">
@@ -43,8 +45,11 @@ function Home() {
           </ul>
         </nav>
         <div className="searchs">
-          <input type="text" className='search' placeholder='Search the collection...' />
-          <div className="icons" style={{display:"flex", alignItems:"center"}}>
+          <div className="search-box">
+            <input type="text" className="search" placeholder="Search the collection..."/>
+            <CiSearch className="home-search" />
+          </div>
+          <div className="icons" style={{ display: "flex", alignItems: "center" }}>
             <IoMdCart className='cart' />
             <FaRegUser className='user' />
           </div>
@@ -54,23 +59,25 @@ function Home() {
       <img src={Container} className='Container-img' alt="" />
 
       <section className='hero'>
-        <h2 className='volume'>Volume I: The Spring Edit</h2>
-        <h1 className='modern'>Curated Living for the <br /> Modern Home</h1>
-        <div className="btns">
-          <button className="explore">Explore Collections</button>
-          <button className="story">The Artisan Story</button>
+        <div className='hero-texts'>
+          <h2 className='volume'>Volume I: The Spring Edit</h2>
+          <h1 className='modern'>Curated Living for the <br /> Modern Home</h1>
+          <div className="btns">
+            <button className="explore">Explore Collections</button>
+            <button className="story">The Artisan Story</button>
+          </div>
         </div>
       </section>
 
-      <div className='editor-header'>
-        <div className='choice'>
-          <h3 className='editor-text'>Editor's Choice</h3>
-          <h1 className='new-text'>New Arrivals</h1>
+      <div className="editor-header">
+        <div>
+          <h3>Editor's Choice</h3>
+          <h1>New Arrivals</h1>
         </div>
-        <div className='curated'>
-          <h4 className='showing-text'>Showing 12 of 48 curated pieces</h4>
-        </div>
+        <h4>Showing 12 of 48 curated pieces</h4>
       </div>
+
+
       <section className='home-card'>
         <div className='curateds'>
           <div className="card-container">
@@ -81,7 +88,7 @@ function Home() {
             <div className="content-box">
               <h2 className="product-title">Scandi Ceramic Vesse</h2>
               <p className="product-desc">Artisan-crafted ceramic vase with a <br /> unique volcanic glaze finish. Perfect fo…</p>
-              <p className="product-price" style={{ fontSize: "15px", marginLeft:"5px"}}>$120</p>
+              <p className="product-price" style={{ fontSize: "15px", marginLeft: "5px" }}>$120</p>
               <div className='link-view'>
                 <ul>
                   <li><a className='view' href="#">View Details →</a></li>
@@ -98,7 +105,7 @@ function Home() {
             <div className="content-box">
               <h2 className="product-title">Raw Linen Throw</h2>
               <p className="product-desc">Woven from 100% organic European <br /> flax. Soft, breathable, and naturally…</p>
-              <p className="product-price" style={{ fontSize: "15px", marginLeft:"10px"}} >$85</p>
+              <p className="product-price" style={{ fontSize: "15px", marginLeft: "10px" }} >$85</p>
               <div className="link-view">
                 <ul>
                   <li><a className='view' href="#">View Details →</a></li>
@@ -115,7 +122,7 @@ function Home() {
             <div className="content-box">
               <h2 className="product-title">Architectural Pendant</h2>
               <p className="product-desc">Sleek matte metal finish with adjustable <br /> height. A sculptural statement for any…</p>
-              <p className="product-price" style={{ fontSize: "15px", marginLeft:"5px"}}>$340</p>
+              <p className="product-price" style={{ fontSize: "15px", marginLeft: "5px" }}>$340</p>
               <div className="link-view">
                 <ul>
                   <li><a className='view' href="#">View Details →</a></li>
@@ -132,7 +139,7 @@ function Home() {
             <div className="content-box">
               <h2 className="product-title">Amber Apothecary Set</h2>
               <p className="product-desc">Hand-poured vessels for your daily <br /> essentials. Features airtight walnut lids…</p>
-              <p className="product-price" style={{ fontSize: "15px", marginLeft:"10px"}}>$55</p>
+              <p className="product-price" style={{ fontSize: "15px", marginLeft: "10px" }}>$55</p>
               <div className="link-view">
                 <ul>
                   <li><a className='view' href="#">View Details →</a></li>
@@ -152,7 +159,7 @@ function Home() {
             <div className="content-box">
               <h2 className="product-title">Boucle Accent Cushion</h2>
               <p className="product-desc">Add tactile warmth to your seating area <br /> with this heavy-weight boucle textile…</p>
-              <p className="product-price" style={{ fontSize: "15px", marginLeft:"10px"}}>$75</p>
+              <p className="product-price" style={{ fontSize: "15px", marginLeft: "10px" }}>$75</p>
               <div className='link-view'>
                 <ul>
                   <li><a className='view' href="#">View Details →</a></li>
@@ -169,7 +176,7 @@ function Home() {
             <div className="content-box">
               <h2 className="product-title">Abstract Ink Study</h2>
               <p className="product-desc">Limited edition giclee print on archival <br /> cotton paper. Signed and numbered by…</p>
-              <p className="product-price" style={{ fontSize: "15px", marginLeft:"5px"}}>$210</p>
+              <p className="product-price" style={{ fontSize: "15px", marginLeft: "5px" }}>$210</p>
               <div className="link-view">
                 <ul>
                   <li><a className='view' href="#">View Details →</a></li>
@@ -186,7 +193,7 @@ function Home() {
             <div className="content-box">
               <h2 className="product-title">Cast Brass Incense Bowl</h2>
               <p className="product-desc">Solid brass vessel designed for ritual. <br /> Develops a beautiful natural patina ove…</p>
-              <p className="product-price" style={{ fontSize: "15px", marginLeft:"10px"}}>$95</p>
+              <p className="product-price" style={{ fontSize: "15px", marginLeft: "10px" }}>$95</p>
               <div className="link-view">
                 <ul>
                   <li><a className='view' href="#">View Details →</a></li>
@@ -203,7 +210,7 @@ function Home() {
             <div className="content-box">
               <h2 className="product-title">Vachetta Home Slipper</h2>
               <p className="product-desc">Full-grain vegetable-tanned leather with <br /> a cushioned ergonomic sole for interior…</p>
-              <p className="product-price" style={{ fontSize: "15px", marginLeft:"10px"}}>$145</p>
+              <p className="product-price" style={{ fontSize: "15px", marginLeft: "10px" }}>$145</p>
               <div className="link-view">
                 <ul>
                   <li><a className='view' href="#">View Details →</a></li>
@@ -213,6 +220,7 @@ function Home() {
           </div>
         </div>
       </section>
+
 
       <section className='featured-mobile'>
         <div className='featured-header'>

@@ -4,6 +4,7 @@ import Home from './pages/Home/Home'
 import Categories from './pages/Categories/Categories'
 import Product from './pages/Product/Product'
 import Search from './pages/Search/Search'
+import './index.css'
 
 function App() {
   return (
