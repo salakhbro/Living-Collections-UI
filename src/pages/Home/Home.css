@@ -614,6 +614,8 @@ li>a.view:hover {
     display: none;
 }
 
+
+
 @media (max-width: 390px) {
     .header {
         width: 100%;
